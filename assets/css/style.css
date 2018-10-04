@@ -1,13 +1,29 @@
-*body{
+body{
     border-style:border-box;
+}
+
+h1{
+    text-align:center;
 
 }
-.container{
-    background-color:white;
-
+p{
+    text-align:center;
+    color:teal;
 }
-.header{
+
+#giphy-form{
+    text-align:center;
+}
+.button-view{
+    margin: 20px 0px 20px 0px;
+}
+.giphy{
+ margin-right: 10px;
+ float: left;
+    margin-bottom: 20px;
+    color: grey;
+    text-align: center;
+    font-style: italic;
     background-color:grey;
-    color: white;
-    
 }
+
