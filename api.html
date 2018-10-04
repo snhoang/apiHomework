@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GiPHYPAGE</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+</head>
+<body>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-4">WELCOME TO THE GIPHYPAGE</h1>
+          <p class="lead">Please Search a giphy</p>
+        
+          <form id="giphy-form">
+            <label for="search-input"> Let's have some fun</label><br>
+            <input type= "text" id="topic">
+            <input id="add-topic" class = "btn btn-default" type="submit" value="Submit">
+          </form>
+        
+        <br>
+
+            <div class="text-center">
+                <div class="button-view"></div>
+            </div>
+        
+        </div>
+    </div>
+    
+
+    
+
+    
+    
+    
+    <!-- This is the cdn for the jquery library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- This is for the javascript -->
+    <script type = "text/javascript">
+        
+
+            var queryURL= "https://api.giphy.com/v1/gifs/search?q=ryan+gosling&api_key=Xh78ijfyRDmeQ9KYjKZqKOj0oQStEmRp"
+            $.ajax({
+                url:queryURL,
+                method: "GET"
+                
+            }).then(function(response){
+                console.log(response);
+                
+            })
+        
+    
+    
+    </script>
+</body>
+</html>

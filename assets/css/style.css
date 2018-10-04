@@ -1,0 +1,13 @@
+*body{
+    border-style:border-box;
+
+}
+.container{
+    background-color:white;
+
+}
+.header{
+    background-color:grey;
+    color: white;
+    
+}
